@@ -24,10 +24,19 @@ class SignIn extends Component {
   render() {
     return (
       <div>
-        <h1>
-          Sign In
-        </h1>
-      <Form horizontal onSubmit={this.handleSubmit.bind(this)}>
+        <h2 id="list" >
+          Welcome
+          <br/>
+          To
+          <br/>
+          <h1 id="signUpSignIn" style={{color:"black"}}>
+            There's Nothing to Eat &copy;
+          </h1>
+        </h2>
+
+        <br/>
+
+      <Form id="listSignIn" horizontal onSubmit={this.handleSubmit.bind(this)}>
         <FormGroup  controlId="formHorizontalEmail">
           <Col componentClass={ControlLabel} sm={4}>
           </Col>
@@ -38,7 +47,7 @@ class SignIn extends Component {
               onChange={e => {
                 this.setState({[e.target.name]: e.target.value});
               }}
-              placeholder="email@email.com"
+              placeholder="email@foody.com"
               value={this.state.username} />
           </Col>
         </FormGroup>
@@ -59,9 +68,16 @@ class SignIn extends Component {
             />
           </Col>
         </FormGroup>
+        <div id="listSignIn">
+          Not registered?
+          <br/>
+          Just navigate to the Sign Up tab to begin.
+        </div>
+
+        <br/>
         <FormGroup>
           <Col smOffset={4} sm={4}>
-            <Button type="submit">Sign In</Button>
+            <Button id="signUpSignIn" type="submit">Sign In</Button>
           </Col>
         </FormGroup>
       </Form>

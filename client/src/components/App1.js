@@ -17,10 +17,10 @@ class App1 extends Component {
   render() {
     return (
       <div className="container" >
-        <div className="row text-center">
-          <div className="jumbotron">
-            <h1>Recipe Magic</h1>
-            <p>There's Nothing to Eat!</p>
+        <div className="row text-center" >
+          <div >
+            <h1 id="signUpSignIn" style={{fontSize: "33pt"}}>There's Nothing to Eat!</h1>
+            <h2 id="signUpSignIn"></h2>
           </div>
           < br/>
         </div>
@@ -29,12 +29,12 @@ class App1 extends Component {
             <Switch>
               <Route path="/" exact component={ RecipeResults } />
               <Route path="/fav" exact component={ FavoriteRecipeList } />
-              <Route path="/AppList" exact component={ AppList } />
+              <Route style={{height: "auto"}} path="/AppList" exact component={ AppList } />
             </Switch>
           </Router>
         </div>
         <div className="row" align="center" >
-          {/*<DietNav />*/}
+
         </div>
         {/*<div className="row">*/}
         {/*/!*<RecipeResults />*!/*/}

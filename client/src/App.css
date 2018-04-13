@@ -1,3 +1,6 @@
+.body{
+  display: flex;
+}
 .App {
   text-align: center;
 }
@@ -23,16 +26,69 @@
   to { transform: rotate(360deg); }
 }
 .jumbotron {
-  /*background-image: url("./images/forkAndKnife.png");*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+
+  /*height: 300px;*/
+  width: 100%;
+  background-image: url("https://cdn.wallpapersafari.com/89/69/7lcvoK.jpg");
   /*background-color: #17234E;*/
   /*margin-bottom: 0;*/
   /*min-height: 25%;*/
-  background-repeat: repeat;
-  background-position: center;
+  /*background-repeat: none;*/
+  background-size: 100% 100%;
+
+  /*background-position: center, center;*/
+  /*background-position: center top;*/
+  /*background-position: center bottom;*/
   /*-webkit-background-size: cover;*/
-  /*background-size: 3%;*/
+  /*background-size: 50%;*/
 }
 
 #list {
   list-style-type: none;
+  font-family: 'Playfair Display SC', serif;
+  color: #9A3014;
 }
+#listSignIn{
+  font-family: 'Playfair Display', serif;
+
+}
+
+#signUpSignIn {
+  /*font-family: 'Playfair Display SC', serif;*/
+  font-family: 'Aclonica', sans-serif;
+  /*font-family: 'Megrim', cursive;*/
+  /*font-family: 'Fascinate', cursive;*/
+  /*color: #7FA78C;*/
+
+}
+
+.buttonColor{
+  /*background-color: #7FA78C;*/
+  /*background-color: #D6E2F3;*/
+  background-color: #C6CBCC;
+  /*background-color: #9FA9A1;*/
+  color: ButtonText;
+  font-family: 'Aclonica', sans-serif;
+
+}
+#searchButton{
+  /*background-color: #003F19;*/
+  background-color: #C6CBCC;
+  border-color: #9A3014;
+  color: black;
+}
+
+#navBar{
+  /*background-color: #7FA78C;*/
+}
+#boxShade{
+  /*box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);*/
+  box-shadow: 5px 10px 5px lightslategrey;
+}
+
+
+/*font-family: 'Megrim', cursive;*/
+/*font-family: 'Uncial Antiqua', cursive;*/
+/*font-family: 'Londrina Shadow', cursive;*/

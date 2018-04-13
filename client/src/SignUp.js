@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { FormGroup, ControlLabel, FormControl, Button, Col,Form, Checkbox } from "react-bootstrap";
+import "./App.css"
 
 class SignUp extends Component {
   constructor() {
@@ -25,11 +26,18 @@ class SignUp extends Component {
   render() {
     return (
       <div>
-        <h1>
-          Register
-        </h1>
+        <h2 id="list">
+          Get Registered
+          <br/>
+          For
+          <br/>
+          <h1 id="signUpSignIn" style={{color:"black"}}>
+            There's Nothing to Eat &copy;
+          </h1>
+        </h2>
+        <br/>
 
-      <Form  horizontal onSubmit={this.handleSubmit.bind(this)}>
+      <Form  id="listSignIn" horizontal onSubmit={this.handleSubmit.bind(this)}>
           <FormGroup  controlId="formHorizontalEmail">
             <Col componentClass={ControlLabel} sm={4}>
             </Col>
@@ -40,7 +48,7 @@ class SignUp extends Component {
                 onChange={e => {
                   this.setState({[e.target.name]: e.target.value});
                 }}
-                placeholder="email@email.com"
+                placeholder="email@foody.com"
                 value={this.state.username} />
             </Col>
           </FormGroup>
@@ -80,7 +88,7 @@ class SignUp extends Component {
           </FormGroup>
           <FormGroup>
             <Col smOffset={4} sm={4}>
-              <Button type="submit">Sign Up</Button>
+              <Button id="signUpSignIn" type="submit">Sign Up</Button>
             </Col>
           </FormGroup>
       </Form>

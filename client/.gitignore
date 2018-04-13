@@ -18,5 +18,5 @@ npm-debug.log
 .idea/
 
 #HiddenInfo
-**/client/src/secrets.js
+#**/client/src/secrets.js
 

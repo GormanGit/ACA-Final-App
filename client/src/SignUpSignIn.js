@@ -17,11 +17,11 @@ class SignUpSignIn extends Component {
 
   render() {
     return (
-      <Row>
+      <Row id="list" >
         <Col xs={8} xsOffset={2}>
           {this.props.error && this.renderError()}
-          <Tabs defaultActiveKey={1} id="signup-signin-tabs">
-            <Tab eventKey={1} title="Sign In">
+          <Tabs   defaultActiveKey={1} id="signup-signin-tabs">
+            <Tab   eventKey={1} title="Sign In">
               <SignIn onSignIn={this.props.onSignIn} />
             </Tab>
             <Tab eventKey={2} title="Sign Up">
